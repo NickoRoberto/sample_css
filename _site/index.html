@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width">
 
     <head>
-    <title>Test Page: Don't Panic</title>
+    
+      <title>Fuck yeah | Test Page</title>
+    
+    
+     
+      <meta name="description" content="hello there.">
+    
+    
+    <link href="/favicon.png" rel="icon">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
     <header class="header">
   <nav>
+    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+    <label for="mobile-menu" class="show-mobile-menu">Menu</label>
     <ul class="header-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
-<li><a href="/2018/05/08/title-of-post.html">Latest blog post</a></li>
+
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2018/05/09/title-of-post.html">Hello</a></li>
+    
+      <li><a href="/2018/05/08/title-of-post.html">Hello</a></li>
+    
+      <li><a href="/2018/05/07/title-of-post.html">This is the title of the post</a></li>
+    
+      <li><a href="/2018/05/06/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
+<li><a href="/2018/05/09/title-of-post.html">Latest blog post</a></li>
     </ul>
   </nav>
   <a href="/" class="header-logo">
@@ -24,9 +51,7 @@
 </header> 
     
     <div class="content-container">
-      <!-- this begins the <meta name="viewport" content="width=device-width">
-
-<div class="gallery col-three">
+      <!-- this begins the <div class="gallery col-three">
   <div class="col col-nav gallery-thumbs" id="gallery-thumbs">
     <div class="">
       <img src="/images/small/slide1.jpg" alt="Image title 1">
@@ -45,25 +70,30 @@
     <p>Image description 1</p>
   </div>
 </div> variable contents --> 
-<meta name="viewport" content="width=device-width">
 
 <div class="home">
   <div class="full-hero hero-home">
-    <div class="hero-content">
-    <h1>code dangerously</h1>
-      <ul class="social list">
-       <li>
-          <a href="http://example.com/" class="social-link">Fb</a>
-        </li>
-        <li>
-          <a href="http://example.com/" class="social-link">Tw</a>
-        </li>
-        <li>
-          <a href="http://example.com/" class="social-link">Gh</a>
-        </li>
-      </ul>
-    </div>
+  <div class="hero-content">
+    <h1>CODE DANGEROUSLY</h1>
+    <ul class="social-list">
+      <li>
+        <a href="https://facebook.com/learnenough" class="social-link">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/learnenough" class="social-link">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/learnenough" class="social-link">
+          <i class="fa fa-github"></i>
+        </a>
+      </li>
+    </ul>
   </div>
+</div>
   
   <div class="home-callout">
     <h1 class="callout-title">The Learn Enough Story</h1>
@@ -102,7 +132,7 @@
     <div class="blog-posts">
       <header class="post-header">
         <h2>
-          <a href="/2018/05/08/title-of-post.html">
+          <a href="/2018/05/09/title-of-post.html">
             Hello
           </a>
         </h2>
@@ -110,7 +140,7 @@
           <img src="https://en.gravatar.com/userimage/137509109/d32c939f0fd0451b28e2828b376e87f2?s=150" >
           <a href="http://twitter.com/nickohoneohone" class="social-link">Tw</a>
           by: Nicko Roberto 
-          <span> - May 08, 2018</span>
+          <span> - May 09, 2018</span>
         </div>
       </header>
       <div class="posts-image" style="background-image:url(/images/miranda.jpg)"></div>
@@ -138,7 +168,7 @@ the spleen and regulating the circulation.</p>
         <img src="http://placekitten.com/g/400/400">
         <h3>Michael Hartl</h3>
         <a href="http://twitter.com/mhartl" class="social-link">
-          Tw
+          <i class="fa fa-twitter"></i>
         </a>
         <div class="bio-copy">
           <p>
@@ -162,7 +192,7 @@ the spleen and regulating the circulation.</p>
         <img src="http://placekitten.com/g/400/400">
         <h3>Lee Donahoe</h3>
         <a href="https://twitter.com/leedonahoe" class="social-link">
-          Tw
+          <i class="fa fa-twitter"></i>
         </a>
         <div class="bio-copy">
           <p>
@@ -177,7 +207,7 @@ the spleen and regulating the circulation.</p>
         <img src="http://placekitten.com/g/400/400">
         <h3>Nick Merwin</h3>
         <a href="https://twitter.com/nickmerwin" class="social-link">
-          Tw
+          <i class="fa fa-twitter"></i>
         </a>
         <div class="bio-copy">
           <p>
@@ -201,8 +231,23 @@ the spleen and regulating the circulation.</p>
     <ul class="footer-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
-<li><a href="/2018/05/08/title-of-post.html">Latest blog post</a></li>
+
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2018/05/09/title-of-post.html">Hello</a></li>
+    
+      <li><a href="/2018/05/08/title-of-post.html">Hello</a></li>
+    
+      <li><a href="/2018/05/07/title-of-post.html">This is the title of the post</a></li>
+    
+      <li><a href="/2018/05/06/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
+<li><a href="/2018/05/09/title-of-post.html">Latest blog post</a></li>
     </ul>
     <ul class="footer-social social-list">
       
